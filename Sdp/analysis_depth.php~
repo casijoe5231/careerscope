@@ -1,0 +1,241 @@
+<?php
+session_start();
+
+    if(!isset($_SESSION['user'])){
+        header("location:../login.php");
+    }
+	
+//Connection Code
+$db="careerscope";
+$servername = "localhost";
+$username = "root";
+$password = "oracle";
+
+// Create connection
+$conn=mysql_connect($servername,$username,$password);  // Make Connection
+	mysql_select_db($db);                      // Select Database
+
+// Check connection
+if (!$conn) {
+    die('Could not connect: ' . mysql_error());
+}
+//echo "Connected successfully";
+
+//Connection Code ends
+$email=$_SESSION['user'][0];
+$user=$_SESSION['user'][1];
+?>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/favicon.ico" rel="shortcut icon"/>
+	
+    <title>EYB | Analysis In Depth</title>
+      
+<!--  CSS  -->
+<link rel="stylesheet" type="text/css" href="../css/logo.css">
+    <link rel="stylesheet" type="text/css" href="../css/sdp_edit_border.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='../css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="../css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="../css/slicknav.css">
+    <link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main
+    stylesheet"charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet'             type='text/css'>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css_modal/bootstrap.css">
+<link rel="stylesheet" href="css_modal/style1.css">
+
+<!--Script for Line Chart -->
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Specific Goal Analysis"             
+      }, 
+      animationEnabled: true,     
+      axisY:{
+        titleFontFamily: "arial",
+        titleFontSize: 12,
+        includeZero: false
+      },
+      toolTip: {
+        shared: true
+      },
+      data: [
+      {        
+        type: "spline",  
+        name: "System",        
+        showInLegend: true,
+        dataPoints: [
+        {label: "Atlanta 1996" , y: 1} ,     
+        {label:"Sydney 2000", y: 2} ,     
+        {label: "Athens 2004", y: 3} ,     
+        {label: "Beijing 2008", y: 4} ,     
+        {label: "London 2012", y: 5}              
+        ]
+      }, 
+      {        
+        type: "spline",  
+        name: "Mentor",        
+        showInLegend: true,
+        dataPoints: [
+        {label: "Atlanta 1996" , y: 6} ,     
+        {label:"Sydney 2000", y: 7} ,     
+        {label: "Athens 2004", y: 8} ,     
+        {label: "Beijing 2008", y: 9} ,     
+        {label: "London 2012", y: 10}              
+        ]
+      },
+      {        
+        type: "spline",  
+        name: "Self",        
+        showInLegend: true,
+        dataPoints: [
+        {label: "Atlanta 1996" , y: 9} ,     
+        {label:"Sydney 2000", y: 8} ,     
+        {label: "Athens 2004", y: 7} ,     
+        {label: "Beijing 2008", y: 6} ,     
+        {label: "London 2012", y: 5}              
+        ]
+      }
+     
+      ],
+      legend:{
+        cursor:"pointer",
+        itemclick:function(e){
+          if(typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+          	e.dataSeries.visible = false;
+          }
+          else {
+          	e.dataSeries.visible = true;            
+          }
+          chart.render();
+        }
+      }
+    });
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="js_spline/canvasjs.min.js"></script>
+<!--Script for Line Chart Ends now -->
+
+<style>
+.headerLine{
+    position: relative;
+    width: 101%;
+    
+    height:24%;
+    background: url(../images/bgTop.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<!--header starts-->
+<div style="margin-bottom:10px;" id="home">
+            <div class="headerLine">
+                <div id="menuF" class="default" style="margin-bottom:25px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="logo col-md-2">
+                                <div>
+                                    <a href="#">
+                                        <img src="../images/byblogo.png" width="120" height="120">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                	<div class="navmenu"style="text-align: center;">
+						                <ul id="menu">
+                                            <li><a href="../newindex.php">Home</a></li>
+                                            <li><a href="sdp.php" target="">Self Development Plan</a></li>
+                                            <li><a href="eval.php" target="">Goal Evaluation</a></li>
+                                            <li><a href="analysis.php" target="">Analysis</a></li>
+                                            <!--<li class="last"><a href="#contact">Contact</a></li>
+                                            li><a href="#features">Features</a></li-->
+                                        </ul>
+					               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--   /Header     -->
+
+<!-- NAme of user-->
+<div class="container">
+
+    <div style="padding:10px;" class="panel panel-default">
+    <div class="row">
+        <div class="col-sm-3">
+            <h5>Welcome <?php echo $_SESSION['user'][1]; ?>,</h5>
+        </div>
+        <div class="col-sm-8">
+            
+        </div>
+		
+        <div class="col-sm-1">
+            <span><a class="btn btn-default" href="../logout.php">Logout</a></span>
+        </div>
+        
+    </div>
+</div>
+</div>
+<!-- Name of user ends-->
+<!--Body Starts here-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6" id="chartContainer" style="height: 500px; width:98%;">
+  		</div>
+	</div>
+</div>
+<!--Body ends here-->
+<!--  Footer  -->
+<br><br>
+<div class="row">
+<div  class="lineBlack">
+    <div class="container">
+        <div class="row downLine" style="widht:100%">
+            <div class="col-md-12 text-right">
+            </div>
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2014 Build Your Brand. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right dm">
+               <!-- <ul id="downMenu">
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 1</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 2</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 3</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--  End of Footer  -->
+
+  
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js_modal/jquery.js"></script> 
+<script src="../js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js_modal/bootstrap.js"></script>
+</body>
+</html>

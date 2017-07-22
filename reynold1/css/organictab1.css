@@ -1,0 +1,26 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+
+a { text-decoration: none; }
+a:focus { outline: 0; }
+
+
+
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+
+ul { list-style-type:none;}
+li { display: block; text-align: center; overflow: hidden; width: 200px; float: left; margin-left: 15px; border: 1px solid #000000; text-transform: uppercase;margin-left:auto;margin-right:auto;}
+
+
+
+

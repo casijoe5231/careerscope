@@ -1,0 +1,12 @@
+
+<?php
+    // Connection Settings
+	$hostname="localhost";  // Hostname
+	$username="root";       // Username for Database
+	$password="";           // Database password
+	$dbname="careerscope";        // Database name
+	
+	mysql_connect("$hostname","$username","$password")or die("Cannot connect");  // Make Connection
+	mysql_select_db("$dbname")or die("Cannot connect");                      // Select Database
+	
+	?>

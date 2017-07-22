@@ -1,0 +1,177 @@
+<?php
+	include '../connection1.php';
+session_start();
+if(empty($_SESSION['6_letters_code'] ) ||
+	  strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
+{
+	echo "<html><head><script src='../js/alertify.min.js'></script>
+<link rel='stylesheet' href='../css/alertify.core.css' />
+<link rel='stylesheet' href='../css/alertify.default.css' /></head></html>";
+echo "<SCRIPT LANGUAGE='JavaScript'>
+    alertify.alert('Please enter correct code!!', function (e) {
+    window.location.href='../login.php';
+});
+	
+    </SCRIPT>";
+}
+else
+{
+$name = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['name']);
+$email = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['email']);
+$phone = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['phone']);
+$password = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['password']);
+$discipline = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_SESSION['discipline']);
+$institute = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_SESSION['institute']);
+
+$email1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['email']);
+$date = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['date']);
+$gender = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['gender']);
+$address = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['address']);
+$objective = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['objective']);
+$skills = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['skills']);
+$special = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['special']);
+$location = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['location']);
+$remuneration = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['remuneration']);
+$period = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['period']);
+$company = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['company']);
+$title = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['title']);
+$area = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['area']);
+$cskills = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['cskills']);
+$industry = implode(",",$_POST['industry']);
+$certifications = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['certifications']);
+$achievements = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['achievements']);
+$language = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['language']);
+$hobbies = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['hobbies']);
+
+$board = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board']);
+$board1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board1']);
+$board2 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board2']);
+$board3 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board3']);
+$board4 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board4']);
+$board5 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board5']);
+$board6 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board6']);
+$board7 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['board7']);
+$school = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school']);
+$school1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school1']);
+$school2 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school2']);
+$school3 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school3']);
+$school4 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school4']);
+$school5 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school5']);
+$school6 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school6']);
+$school7 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['school7']);
+$specialisation = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation']);
+$specialisation1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation1']);
+$specialisation2 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation2']);
+$specialisation3 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation3']);
+$specialisation4 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation4']);
+$specialisation5 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation5']);
+$specialisation6 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation6']);
+$specialisation7 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['specialisation7']);
+$aggregate = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate']);
+$aggregate1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate1']);
+$aggregate2 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate2']);
+$aggregate3 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate3']);
+$aggregate4 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate4']);
+$aggregate5 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate5']);
+$aggregate6 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate6']);
+$aggregate7 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['aggregate7']);
+$pass = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass']);
+$pass1 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass1']);
+$pass2 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass2']);
+$pass3 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass3']);
+$pass4 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass4']);
+$pass5 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass5']);
+$pass6 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass6']);
+$pass7 = mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $_POST['pass7']);
+
+$sql="insert into masteruser(email,password,name,year,mobile,role,discipline,institute,status) values('$email','$password','$name','".date('Y')."','$phone','Student','$discipline','$institute',0)";
+$res=mysqli_query($GLOBALS["___mysqli_ston"], $sql)or die("query not executed");
+
+$sql="insert into istudent(email,gender,dob,address,objective,skills,special,location,remuneration,period,company,title,area,cskills,industry,certifications,achievements,language,hobbies,qualification,school,board,specialisation,aggregate,pass,qualification1,school1,board1,specialisation1,aggregate1,pass1,qualification2,school2,board2,specialisation2,aggregate2,pass2,qualification3,school3,board3,specialisation3,aggregate3,pass3,qualification4,school4,board4,specialisation4,aggregate4,pass4,qualification7,school7,board7,specialisation7,aggregate7,pass7,qualification5,school5,board5,specialisation5,aggregate5,pass5,qualification6,school6,board6,specialisation6,aggregate6,pass6,enrollstatus,paymentstatus,tpoapprove) values('$email1','$gender','$date','$address','$objective','$skills','$special','$location','$remuneration','$period','$company','$title','$area','$cskills','$industry','$certifications','$achievements','$language','$hobbies','Fifth year','$school','$board','$specialisation','$aggregate','$pass','Fourth year','$school1','$board1','$specialisation1','$aggregate1','$pass1','Third year','$school2','$board2','$specialisation2','$aggregate2','$pass2','Second year','$school3','$board3','$specialisation3','$aggregate3','$pass3','First year','$school4','$board4','$specialisation4','$aggregate4','$pass4','Diploma','$school7','$board7','$specialisation7','$aggregate7','$pass7','HSC','$school5','$board5','$specialisation5','$aggregate5','$pass5','SSC','$school6','$board6','$specialisation6','$aggregate6','$pass6',0,0,0)";
+$res=mysqli_query($GLOBALS["___mysqli_ston"], $sql)or die("query not executed");
+
+$allowedExts = array("pdf","doc","docx");
+$temp = explode(".", $_FILES["file"]["name"]);
+$extension = end($temp);
+if (($_FILES["file"]["size"] < 5000000)
+&& in_array($extension, $allowedExts))
+{
+	  mkdir("../uploads/$_POST[email]");
+      move_uploaded_file($_FILES["file"]["tmp_name"],
+      "../uploads/$_POST[email]/" . $_FILES["file"]["name"]);
+}
+
+
+ /* // create email headers
+    $headers = 'From: '.$email_from."\r\n".
+    'Reply-To: '.$email_from."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer();
+    //Tell PHPMailer to use SMTP
+    $mail->IsSMTP();
+    //Enable SMTP debugging
+    // 0 = off (for production use)
+    // 1 = client messages
+    // 2 = client and server messages
+    $mail->SMTPDebug  = 2;
+    //Ask for HTML-friendly debug output
+    $mail->Debugoutput = 'html';
+    //Set the hostname of the mail server
+    $mail->Host       = "hostname";
+    //Set the SMTP port number - likely to be 25, 465 or 587
+    $mail->Port       = 465;
+    //Whether to use SMTP authentication
+    $mail->SMTPAuth   = true;
+    //Username to use for SMTP authentication
+    $mail->Username   = "email";
+    //Password to use for SMTP authentication
+    $mail->Password   = "password";
+    //Set who the message is to be sent from
+    $mail->SetFrom($email_from);
+    //Set an alternative reply-to address
+    //$mail->AddReplyTo('replyto@example.com','First Last');
+    //Set who the message is to be sent to
+    $mail->AddAddress($email_from);
+    //Set the subject line
+    $mail->Subject = 'Request for Profile Check up';
+    //Read an HTML message body from an external file, convert referenced images to embedded, convert HTML into a basic plain-text alternative body
+    $mail->MsgHTML($email_message);
+    //Replace the plain text body with one created manually
+    $mail->AltBody = 'This is a plain-text message body';
+    //Attach an image file
+    $mail->AddAttachment($file);
+    
+    //Send the message, check for errors
+    if(!$mail->Send()) {
+      echo "<script>alert('Mailer Error: " . $mail->ErrorInfo."')</script>";
+    } else {
+      echo "<script>alert('Your request has been submitted. We will contact you soon.')</script>";
+    }
+*/
+
+	if($res)
+	{
+		echo "<html><head><script src='../js/alertify.min.js'></script>
+		<link rel='stylesheet' href='../css/alertify.core.css' />
+		<link rel='stylesheet' href='../css/alertify.default.css' /></head></html>";
+		echo "<SCRIPT LANGUAGE='JavaScript'>
+		alertify.alert('You have registered successfully.Please login', function (e) {
+		window.location.href='../login.php';
+		});</SCRIPT>";
+	}
+	else
+	{
+		echo "<html><head><script src='../js/alertify.min.js'></script>
+		<link rel='stylesheet' href='../css/alertify.core.css' />
+		<link rel='stylesheet' href='../css/alertify.default.css' /></head></html>";
+		echo "<SCRIPT LANGUAGE='JavaScript'>
+		alertify.alert('Error occured. Being redirected to form.', function (e) {
+		window.location.href='sregister.php';
+		});</SCRIPT>";
+	}
+	
+}
+
+
+?>

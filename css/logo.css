@@ -1,0 +1,476 @@
+
+/*neon effect*/
+
+/*pink primary FF1177*/
+
+#logo-container > a{
+  text-decoration: none; 
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#neonglow{
+  color:#Ffffff;
+  font-family:Saginaw;
+  -webkit-animation: flick 2s 2s linear, neon 1.5s ease-in-out 4s infinite alternate;
+  -moz-animation: flick 2s 2s linear, neon 1.5s ease-in-out 4s infinite alternate;
+  animation: flick 2s 2s linear, neon 1.5s ease-in-out 4s infinite alternate;
+  /*-webkit-animation: neon 1.5s ease-in-out 2s infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out 2s infinite alternate;
+  animation: neon 1.5s ease-in-out 2s infinite alternate;*/
+}
+
+/*flicker keyframe*/
+@-webkit-keyframes flick {
+  0%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  10%{ color: #B20EBC; text-shadow: none;}
+  18%{ color: #B20EBC; text-shadow: none;}
+  19%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  40%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  41%{ color: #B20EBC; text-shadow: none;}
+  59%{ color: #B20EBC; text-shadow: none;}
+  60%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  79%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  80%{ color: #B20EBC; text-shadow: none;}
+  89%{ color: #B20EBC; text-shadow: none;}
+  90%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  100%{ color: #FFF;  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+}
+
+@-moz-keyframes flick {
+  0%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  10%{ color: #B20EBC; text-shadow: none;}
+  18%{ color: #B20EBC; text-shadow: none;}
+  19%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  40%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  41%{ color: #B20EBC; text-shadow: none;}
+  59%{ color: #B20EBC; text-shadow: none;}
+  60%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  79%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  80%{ color: #B20EBC; text-shadow: none;}
+  89%{ color: #B20EBC; text-shadow: none;}
+  90%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  100%{ color: #FFF;  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+}
+
+@-ms-keyframes flick {
+  0%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  10%{ color: #B20EBC; text-shadow: none;}
+  18%{ color: #B20EBC; text-shadow: none;}
+  19%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  40%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  41%{ color: #B20EBC; text-shadow: none;}
+  59%{ color: #B20EBC; text-shadow: none;}
+  60%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  79%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  80%{ color: #B20EBC; text-shadow: none;}
+  89%{ color: #B20EBC; text-shadow: none;}
+  90%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  100%{ color: #FFF;  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+}
+
+@-o-keyframes flick {
+  0%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  10%{ color: #B20EBC; text-shadow: none;}
+  18%{ color: #B20EBC; text-shadow: none;}
+  19%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  40%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  41%{ color: #B20EBC; text-shadow: none;}
+  59%{ color: #B20EBC; text-shadow: none;}
+  60%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  79%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  80%{ color: #B20EBC; text-shadow: none;}
+  89%{ color: #B20EBC; text-shadow: none;}
+  90%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  100%{ color: #FFF;  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+}
+
+@keyframes flick {
+  0%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  10%{ color: #B20EBC; text-shadow: none;}
+  18%{ color: #B20EBC; text-shadow: none;}
+  19%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  40%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  41%{ color: #B20EBC; text-shadow: none;}
+  59%{ color: #B20EBC; text-shadow: none;}
+  60%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  79%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  80%{ color: #B20EBC; text-shadow: none;}
+  89%{ color: #B20EBC; text-shadow: none;}
+  90%{ color: #FFF; text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+  100%{ color: #FFF;  text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #B20EBC,
+               0 0 70px  #B20EBC,
+               0 0 80px  #B20EBC,
+               0 0 100px #B20EBC,
+               0 0 150px #B20EBC;}
+}
+
+/*keyframe glow*/
+  @-webkit-keyframes neon {
+    from {
+      color: #FFF;
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #B20EBC,
+                 0 0 70px  #B20EBC,
+                 0 0 80px  #B20EBC,
+                 0 0 100px #B20EBC,
+                 0 0 150px #B20EBC;
+    }
+    to {
+      color: #FFF;
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #B20EBC,
+                 0 0 35px #B20EBC,
+                 0 0 40px #B20EBC,
+                 0 0 50px #B20EBC,
+                 0 0 75px #B20EBC;
+    }
+  }
+
+  @-moz-keyframes neon {
+    from {
+      color: #FFF;
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #B20EBC,
+                 0 0 70px  #B20EBC,
+                 0 0 80px  #B20EBC,
+                 0 0 100px #B20EBC,
+                 0 0 150px #B20EBC;
+    }
+    to {
+      color: #FFF;
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #B20EBC,
+                 0 0 35px #B20EBC,
+                 0 0 40px #B20EBC,
+                 0 0 50px #B20EBC,
+                 0 0 75px #B20EBC;
+    }
+  }
+
+  @-ms-keyframes neon {
+    from {
+      color: #FFF;
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #B20EBC,
+                 0 0 70px  #B20EBC,
+                 0 0 80px  #B20EBC,
+                 0 0 100px #B20EBC,
+                 0 0 150px #B20EBC;
+    }
+    to {
+      color: #FFF;
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #B20EBC,
+                 0 0 35px #B20EBC,
+                 0 0 40px #B20EBC,
+                 0 0 50px #B20EBC,
+                 0 0 75px #B20EBC;
+    }
+  }
+
+  @-o-keyframes neon {
+    from {
+      color: #FFF;
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #B20EBC,
+                 0 0 70px  #B20EBC,
+                 0 0 80px  #B20EBC,
+                 0 0 100px #B20EBC,
+                 0 0 150px #B20EBC;
+    }
+    to {
+      color: #FFF;
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #B20EBC,
+                 0 0 35px #B20EBC,
+                 0 0 40px #B20EBC,
+                 0 0 50px #B20EBC,
+                 0 0 75px #B20EBC;
+    }
+  }
+
+  @keyframes neon {
+    from {
+      color: #FFF;
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #B20EBC,
+                 0 0 70px  #B20EBC,
+                 0 0 80px  #B20EBC,
+                 0 0 100px #B20EBC,
+                 0 0 150px #B20EBC;
+    }
+    to {
+      color: #FFF;
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #B20EBC,
+                 0 0 35px #B20EBC,
+                 0 0 40px #B20EBC,
+                 0 0 50px #B20EBC,
+                 0 0 75px #B20EBC;
+    }
+  }
+
+}

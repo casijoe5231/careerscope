@@ -1,0 +1,9 @@
+Fixes Required for Skill Assessment
+
+-- Fix main page login redirect to last page prob
+
+-- Add tooltips to test 1
+
+
+-- Add delete request button logic     -------------- FIXED
+   & fix styling for corresponding div -------------- FIXED

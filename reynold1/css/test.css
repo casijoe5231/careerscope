@@ -1,0 +1,99 @@
+html
+{
+ width:100%;
+ height:100%;
+ background: url('../images/bg5.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container
+{
+
+ width:90%;
+ margin-left:auto;
+ margin-right:auto;
+
+}
+
+
+.header
+{
+ /*background: url('../images/pattern2.jpg'); */ 
+ padding-left:2%; 
+ width:98%;
+ height:12%;
+ background-color:#0099FF;
+ border-style:solid;
+ border-radius:15px;
+ 
+}
+#content
+{ min-height:70%;
+ width:99%;
+ 
+ background-color:white;
+ margin-top:1%;
+ opacity:0.8;
+ border-style:solid;
+ border-radius:15px;
+ padding:0.5em;
+}
+
+.footer
+{
+ margin-top:1%;
+ width:100%;
+ height: 7%;
+ background-color:#0099FF;
+ border-style:solid;
+ border-radius:15px;
+ text-align:center;
+ padding-top:1%;
+ margin-bottom:1%;
+
+ }
+ 
+.title
+{
+ width:auto;
+ height:50px;
+ background-color:#00CCFF;
+ -moz-border-radius: 5px 15px 15px 5px;
+ border-radius: 5px 25px 25px 5px; 
+ box-shadow: 5px 5px 3px #888888;
+ padding-top:1px;
+ padding-right:30px;
+ float:left;
+}
+
+
+/*Clearfix used to solve problem of floating div's in a parent div */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+/* End clearfix */
+
+
+
+
+

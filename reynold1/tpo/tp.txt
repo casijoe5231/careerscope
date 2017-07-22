@@ -1,0 +1,74 @@
+ <p> Company Name:
+    <div>
+     ".$q."
+    </div>
+    </p>
+    <p>Company Details:
+    <div>
+    </br>".$row['details']."</textarea>
+    </div>
+    </p>
+	<p>Profile Offered:
+    
+    <div>
+    ".$row['profile']."
+    </div>
+    </p>
+	<p>Job Title:
+    
+    <div>
+    ".$row['title']."
+    </div>
+    </p>
+    
+	<p>Skills Required:
+    
+    <div>
+      ".$row['skills']."
+    </div>
+    </p>
+    
+	<p>Others Skills:
+    
+    <div>
+      ".$row['other']."
+    </div>
+    </p>
+	
+	
+	<p>Package:
+    
+    <div>
+      ".$row['package']."
+    </div>
+    </p>
+	<p>Eligibility:
+    
+    <div>
+     ".$row['eligibility']."
+    </div>
+    </p>
+	<p>Recruitment Process :
+    
+    <div>
+      ".$row['process']."
+    </div>
+    </p>
+	<p>Company Website:
+    
+    <div>
+      ".$row['website']."
+    </div>
+    </p>
+	<p>Responsibility scope:
+    
+    <div>
+      ".$row['scope']."
+    </div>
+    </p>
+	<p>Next Position:
+    
+    <div>
+     ".$row['nposition']."
+    </div>
+    </p>

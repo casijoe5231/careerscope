@@ -1,0 +1,115 @@
+@import url(css.css);
+
+#container_internal { 
+    font-family: 'Libre Baskerville', serif;
+ min-width:40%;
+	padding:0;
+	overflow: auto;
+	padding:2%;
+	border-style:solid;
+border-radius:15px;
+ border-width:2px;
+ border-color:#000000;
+ margin-left:25%; margin-right:0px;  -webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+}
+
+#container_internal
+{
+margin-right:5px;
+display:block;
+margin-left:17%;
+}
+
+#container_internal h2 {
+	font-variant:small-caps;
+	font-weight:normal;
+
+}
+#container_internal h3 {
+	font-size:14px;
+	font-weight:normal;
+
+}
+#container_internal p {
+	font-weight:normal;
+	
+
+}
+#container_internal textarea { 
+    
+height:2%;	
+    font-family:inherit; 
+    padding:5px;
+	border:1px solid #3399FF;
+}
+#container_internal input { 
+    height:25px;
+    font-family:inherit; 
+    padding:5px;
+	border:1px solid #3399FF;
+}
+#container_internal textarea { 
+    height:20px; 
+	border:1px solid #3399FF;
+}
+#send_message { 
+    
+	width:200px !important; 
+    font-variant: small-caps; 
+    border:none;
+    cursor:pointer;
+	background:#3399FF;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+#send_message1 { 
+    height:30px;
+	width:200px !important; 
+    font-variant: small-caps; 
+    border:none;
+    cursor:pointer;
+	background:#3399FF;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+
+.error { 
+	display: none; 
+	padding:10px; 
+	margin:0 0 5px 0;
+	color: #D8000C; 
+	font-size:12px;
+	background-color: #FFBABA;
+}
+.success { 
+	display: none; 
+	padding:10px; 
+	color: #044406; 
+	font-size:12px;
+	background-color: #B7FBB9;
+}
+
+.error img { 
+	vertical-align:top; 
+}
+
+fieldset
+{
+border-width:1px;
+border-style:solid;
+border-radius:5px;
+border-color: gray;
+
+}
+
+legend
+{
+border-width:1px;
+border-style:solid;
+border-color:#000000;
+text-transform:uppercase;
+background-color:#0066FF;
+}

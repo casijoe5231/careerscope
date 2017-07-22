@@ -1,0 +1,25 @@
+ body {
+        background:#c33;
+       
+    }
+
+    .panel-transparent {
+        background: none;
+        
+    }
+
+    .panel-transparent .panel-heading{
+        background: rgba(30, 30, 50, 1)!important;
+        
+        
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(46, 51, 56, 0.2)!important;
+        
+    }
+    
+    .panel_padding{
+    	 padding-left: 20px;
+        padding-right: 20px;
+    }

@@ -1,0 +1,135 @@
+<?php
+    session_start();
+   $username = $_SESSION['username'];
+	if(isset($_SESSION['username']))
+	{
+		
+		echo 'hello';
+	
+	}	
+	echo $username;
+?>
+<html>
+<head>
+<!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+	
+    <title>BYB | SDP</title>
+      
+<!--  CSS  -->
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main
+    stylesheet"charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet'             type='text/css'>
+<style>
+.col-md-2 {
+    margin:20px;
+}
+</style>
+</head>
+<body>
+
+<!--header-->
+<div class="row">
+<div class="mast">
+<div class="container">
+        <div class="row">
+            <div class="logo col-md-1">
+                <div>
+                    <a href="#">
+                        <img src="images/byblogo.png" width="90" height="90">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="navmenu" style="text-align: right;">
+                    <ul id="menu">
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+<!--   /Header     -->
+<br><br><br><br><br><br><br><br>
+<!-- body starts here-->
+<div class="row">
+  <div class="col-md-2">
+  	<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="sdp_view.php" data-toggle="tooltip" title="View all the Existing Schedules created till date">View Schedule</a></h3>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="sdp_edit.php" target='_blank'data-toggle="tooltip" title="Edit Existing Schedules">Edit Schedule</a></h3>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="sdp_delete.php" data-toggle="tooltip" title="Delete Unwanted Tasks">Delete Schedule</a></h3>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="sdp_evidence.php" data-toggle="tooltip" title="Submit Certificates for Tasks Achieved">Submit Evidence</a></h3>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="sdp_hist.php" data-toggle="tooltip" title="View history of Changes made">History Log</a></h3>
+  </div>
+  
+</div>
+  </div>
+  
+  <div class="col-md-8">
+  		<div class="jumbotron">
+  <h1>Self-Development Plan</h1>
+  <p>Add Some Description about it......</p>
+  <p><a class="btn btn-primary btn-lg" href="sdp_add_goal.php" role="button">Add a Goal</a></p>
+</div>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip top" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    Some tooltip text!
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<!-- body ends here-->
+<!--  Footer  -->
+<div class="row">
+<div  class="lineBlack">
+    <div class="container">
+        <div class="row downLine">
+            <div class="col-md-12 text-right">
+            </div>
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2014 Build Your Brand. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right dm">
+               <!-- <ul id="downMenu">
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 1</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 2</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 3</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--  End of Footer  -->
+</body>
+</html>

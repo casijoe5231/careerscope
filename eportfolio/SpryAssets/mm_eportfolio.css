@@ -1,0 +1,265 @@
+/* Global Styles */
+			
+body {
+	margin:0px;
+	background-color:#336699;
+	}
+	
+td {
+	font:14px arial;
+	color:#000000;
+	}
+
+	
+th  {
+	font:Georgia, "Times New Roman", Times, serif;
+	color:#000000;
+	font-size:16px;
+	}
+	
+hr {
+	height:1px; 
+	color: #cccccc;
+	border: none;
+	}
+
+table{
+		background-color:#FFFFFF;
+		}
+	
+a {
+	color:#357EC7;
+	text-decoration:underline;
+	}
+	
+a:hover {
+	color:#336699;
+	text-decoration:underline;
+	}
+i{
+	color:#FF0000;
+}
+	
+/* ID Styles */
+
+#navigation a {
+	font:11px georgia;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration: none;
+	letter-spacing:.1em;
+	line-height:16px;
+	display:block;
+	padding:10px;
+	border: 1pt solid rgb(20,40,95);
+	border-right-width: 0px; 
+	border-left-width: 0px;
+	background-color:#336699;
+	}
+	
+#navigation a:hover {
+	color:#000000;
+	border: 1pt dotted blue;
+	border-right-width: 1px; 
+	border-left-width: 1px;
+	background-color:#357EC7;
+	}
+	
+#sidenavigation a {
+	font:11px georgia;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration: none;
+	letter-spacing:.1em;
+	line-height:16px;
+	display:block;
+	padding:10px;
+	border: 1pt solid rgb(20,40,95);
+	border-right-width: 0px; 
+	border-left-width: 0px;
+	background-color:#336699;
+	margin-left:-35px;
+	width:65px;
+	}
+
+#sidenavigation li{
+	list-style:none;
+}
+	
+#sidenavigation a:hover {
+	color:#000000;
+	border: 1pt dotted blue;
+	border-right-width: 1px; 
+	border-left-width: 1px;
+	background-color:#357EC7;
+	width:65px;
+	}
+	
+#sidebarHeader {
+	padding: 0px 4px 14px 4px;
+	}
+
+#feedback td {
+	font:30;
+	color: #FFFF00;
+	line-height:inherit;
+	letter-spacing:0.4em;
+	}
+	
+#dateformat a{
+	font:12px Abbess;
+	color:#ffffff;
+	letter-spacing:.2em;
+	text-decoration:none;
+	font-style:italic;
+	}
+	
+#dateformat a:hover {
+	color: #BDEDFF;
+	}
+	
+
+/* Class Styles */
+
+.bodyText {
+	font:11px arial;
+	color:#99CCFF;
+	line-height:20px;
+	letter-spacing:.1em;
+	margin-top:0px;
+	}
+	
+.pageName{
+	font:22px georgia;
+	color: #CC3300;
+	line-height:10px;
+	letter-spacing:.1em;
+	}
+	
+.loginform{
+			width:250px;
+			height:250px;
+			font-family:Abbess;
+			font-size:20px;
+			color:#357EC7;
+			}
+
+	
+.subHeader {
+	font:16px georgia;
+	color: #CC3300;
+	font-weight:bold;
+	letter-spacing:.1em;
+	line-height:16px;
+	}	
+			
+.sidebarHeader {
+	font:14px georgia;
+	color:#CC0000;
+	font-weight:bold;
+	letter-spacing:.1em;
+	line-height:16px;
+	}	
+	
+.investor{
+			text-transform:capitalize;
+			color:#CC0000;
+			font-family:Abbess;
+			font-size:16px;
+			}
+
+	
+.detailText {
+	font:11px arial;
+	color:#ffffff;
+	line-height:16px;
+	letter-spacing:.1em;
+	}
+	
+.smallText {
+	font:10px arial;
+	color:#99CCFF;
+	}
+
+.style1 {
+	color:#000000;
+	font-size: 12px;
+}
+.style2 {
+	color: #FF3300;
+	font-weight: bold;
+}
+.style3 {font-size: 12px;
+color:#000000;}
+.style4 {
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style5 {
+	font-size: 14px;
+	color: #FFFF00;
+	font-family: "Times New Roman", Times, serif;
+}
+.style6 {
+	font-size: 30px
+}
+.style7 {
+	font-family: "Times New Roman", Times, serif
+}
+.style8 {color: #357EC7}
+
+/* Banners */
+#banner { height: 462px; background: #649525 url(/images/banner_1.jpg) repeat-x 0 0; width: 100%; position: relative; }
+.banner_item { height: 462px; margin: 0 auto; background-position: 50% 100%; background-repeat: no-repeat; overflow: hidden; min-width: 960px; }
+.banner_content { position: absolute; top: 130px; }
+.banner_content h1 { font-size: 3.4em; color: #fff; background: #0b0b0b; text-align: left; padding: 15px 25px 0 20px; float: left; margin: 0; }
+.banner_content p { font-weight: 300; max-width: 480px; color: #BDBDBD; font-size: 1.5em; font-weight: 300; background: #0b0b0b; float: left; clear: left; margin: 0; }
+* html .banner_content p.top { width: 480px; }
+.banner_content p.top { padding: 15px 20px 15px 20px; }
+.banner_content p.bottom { padding: 0 20px 15px 20px; }
+.banner_content a { color: #8bbf36; }
+
+
+/* FOOTER */	
+#foot_planner { width: 553px; margin: 0 auto; clear: both; position: relative; }
+#foot_planner:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+
+#foot_planner h5 { margin-bottom: 55px; }
+#foot_planner a { color: #8bbf36; }
+#foot_planner a.replace { width: 553px; height: 138px; display: block; }
+#foot_planner a.replace span { background: url(/images/project_planner.png) no-repeat 0 0; height: 100%; width: 100%; }
+#foot_planner a.replace:hover span,
+#foot_planner a.replace span.hover { background-position: 0 100%; }
+
+#footer { background: #336699; padding: 5px 0 70px; min-width: 960px; }
+#footer .col { width: 235px; float: left; margin: 0 5px 0 0; }
+#footer h5 { font-size: 1.45em; text-align: left; color: #fbfbfb; font-weight: 300; margin: 0 0 20px; letter-spacing: 0.3px; }
+#footer ul { }
+#footer li { font-size: 1.1em; margin: 0 0 6px 0; padding: 0; }
+#footer a { color: #7B7B7B; }
+#footer a:hover { color: #ffffff; text-decoration: none; }
+#footer p { font-size: 1.3em; color: #ffffff; margin: 0 0 5px 0; text-align:center; }
+#footer span { color: #fbfbfb; }
+#footer #boring_stuff p { margin: 20 0 0 20; width: 1000px;}
+#foot_follow { width: 186px; float: left; }
+#foot_follow li { width: 39px; height: 39px; float: left; margin: 0 10px 10px 0; }
+#foot_follow li.last { margin-right: 0; }
+#foot_follow a { display: block; width: 39px; height: 39px; float: left; }
+#foot_follow span { background: url(Image\facebookicon.jpeg) no-repeat 0 0; height: 100%; width: 100%; }
+#foot_follow a#facebook span { background-position: 0 0; }
+#foot_follow a#facebook:hover span { background-position: 0 100%; }
+#foot_follow a#twitter span { background-position: -39px 0; }
+#foot_follow a#twitter:hover span { background-position: -39px 100%; }
+
+#mailingList { margin: 16px 0 0 0; }
+#mailingList div { float: left; margin: 0 6px 0 0; padding: 0; }
+#mailingList div.last { margin: 0; }
+#mailingList input { background: #373737; color: #a0a0a0; font-size: 1.1em; padding: 9px 6px; width: 156px; margin: 0; float: left; border: none; }
+#mailingList .submit { background: #fbfbfb; margin: 0; line-height: 140%; font-size: 1.2em; padding: 6px 5px; margin: 0; width: auto; border: 1px solid #fbfbfb; color: #0b0b0b; float: left; font-family: "museo-1","museo-2","Helvetica Neue",Helvetica, Arial; font-weight: 300; }
+#mailingList .submit:hover { background: #8bbf36; border-color: #8bbf36; cursor: pointer; color: #fbfbfb; }
+
+
+
+
+
+	

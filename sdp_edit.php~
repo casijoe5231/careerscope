@@ -1,0 +1,99 @@
+<html>
+<head>
+<link href="images/favicon.ico" rel="shortcut icon"/>
+	
+    <title>BYB | SDP -Edit Schedule</title>
+      
+<!--  CSS  -->
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+    <link rel="stylesheet" type="text/css" href="css/sdp_edit_border.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main
+    stylesheet"charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet'             type='text/css'>
+</head>
+<body>
+<!--header-->
+<div class="row">
+<div class="mast">
+<div class="container">
+        <div class="row">
+            <div class="logo col-md-1">
+                <div>
+                    <a href="#">
+                        <img src="images/byblogo.png" width="90" height="90">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="navmenu" style="text-align: right;">
+                    <ul id="menu">
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+<!--   /Header     -->
+<br><br><br><br><br>
+<!--Body starts here-->
+<center><h2>Customize Your Goals</h2></center>
+<div class="panel panel-primary panel-transparent">
+  <div class="panel-heading">
+    <center><h3 class="panel-title">Select the goal you wish to Edit!</h3></center>
+  </div>
+  <div class="panel-body">
+    <!--one Thumbnail-->
+    <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Edit</a> <a href="#" class="btn btn-default" role="button">View</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--One Thumbnail Ends-->
+  </div>
+</div>
+<!--Body Ends here-->
+<!--  Footer  -->
+<div class="row">
+<div  class="lineBlack">
+    <div class="container">
+        <div class="row downLine">
+            <div class="col-md-12 text-right">
+            </div>
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2014 Build Your Brand. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right dm">
+               <!-- <ul id="downMenu">
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 1</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 2</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 3</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--  End of Footer  -->
+</body>
+</html>

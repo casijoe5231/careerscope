@@ -1,0 +1,555 @@
+<?php
+ob_start();
+session_start();
+    include 'includes/connection1.php';
+    include 'includes/redirect.php';
+	if(isset($_POST["submit"]))
+    userredirect($_SESSION['usertype']);
+?>
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+  <head>
+<!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+	
+    <title>Employ able | Login</title>
+      
+<!--  CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main
+    stylesheet"charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet'             type='text/css'>
+      
+<!--  JS  -->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js/camera.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script src="js/sorting.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+			jQuery(function(){
+					jQuery('#camera_wrap_1').camera({
+					transPeriod: 500,
+					time: 3000,
+					height: '490px',
+					thumbnails: false,
+					pagination: true,
+					playPause: false,
+					loader: false,
+					navigation: false,
+					hover: false
+				});
+			});
+		</script>
+      
+    </head>
+<body>
+<!--header starts-->
+		 <div style="margin-bottom:0px;" id="home">
+            <div class="headerLine">
+                <div id="menuF" class="default" style="margin-bottom:0px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="logo col-md-2">
+                                <div>
+                                    <a href="#">
+                                        <img src="images/byblogo.png" width="120" height="120">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                	<div class="navmenu"style="text-align: center;">
+						                <ul id="menu">
+                                            <li><a href="index.php">Home</a></li>
+                                            <li><a href="" target=""></a></li>
+                                            <li><a href="" target=""></a></li>
+                                            <li><a href="#" target=""></a></li>
+                                            <!--<li class="last"><a href="#contact">Contact</a></li>
+                                            li><a href="#features">Features</a></li-->
+                                        </ul>
+					               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--   /Header     -->
+    <!--header-->
+<!--<div class="mast">
+<div class="container">
+        <div class="row">
+            <div class="logo col-md-1">
+                <div>
+                    <a href="#">
+                        <img src="images/byblogo.png" width="90" height="90">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="mast-nav" style="text-align: center;">
+                    <ul id="menu" style="color: red;" >
+                        <li><a href="index.php">Home</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> -->
+
+    
+<!--Sign up and Log in-->
+<div class="mydiv" style="background-color:#ff7733;margin-right:200px;margin-left:80px;">
+    <div class="row" style="margin-bottom:280px;">
+        
+
+        <div class="col-sm-offset-1 col-sm-3">
+            <form role="form" class="form-horizontal" style="padding-top:20px;" action="login.php" method="post">
+            <div class="form-group">
+                <h4>Already a member? <small>Login here!</small></h4>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name='email' placeholder='Email' />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" class="col-md-5 Email" name='password' placeholder='Password' />
+            </div>
+            <div class="form-group">
+                <button type="submit" value="submit" class="btn btn-primary btn-block">Sign In</button>
+            </div>    
+            <div class="form-group">
+                
+<p>Don't have an account yet? Here, <a style="color:#06c;" href='#' data-toggle="modal" data-target="#register-modal" >sign up</a></p>
+
+            </div>    
+               <!-- <div>
+                    <ul>
+                    </ul>
+                    
+                </div>-->
+            </form>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-offset-4 col-sm-3">
+            <img class="img-responsive" src="images/byblogo.png">
+        </div>
+
+    </div>
+    </div>
+
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="register-modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="register-modal-title">Register</h4>
+          </div>
+
+                  <form action="register/sregister.php" role="form" class="form-horizontal">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-offset-1 col-sm-10">
+                
+                    
+                
+                    <div class="form-group">
+                      <div class="col-sm-5">
+                        <label class="control-label" for='input-role'>
+                        Select Role
+                        </label>                          
+                      </div>
+                      <div class="col-sm-7">
+                        <select class="form-control" name="role" id="input-role" temp="Please select the role">
+                            <option value="">Select</option>
+                            <option value="Student" id="Student">Student</option>
+                            <option value="Alumni" id="Alumni">Alumni</option>
+                            <!--<option value="Guest" id="Guest" onClick="go5()">Guest</option>
+                            <option value="Staff" id="Staff" onclick="go1()">Staff</option>
+                            <option value="Recruiter" id="Recruiter" onclick="go3()">Recruiter</option>
+                            <option value="TPO" id="TPO" onclick="go4()">TPO</option>!-->
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-5">
+                        <label class="control-label" for='input-discipline'>
+                        Select Discipline
+                        </label>                          
+                      </div>
+                      <div class="col-sm-7">
+                        <select class="form-control" name="discipline" id="input-discipline" temp="Please select the discipline">
+                            <option value="">Select</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Management">Management</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-5">
+                        <label class="control-label" for='input-institute'>
+                        Select Institute
+                        </label>                          
+                      </div>
+                      <div class="col-sm-7">
+                        <select class="form-control" name="institute" id="input-institute" temp="Please select the institute">
+                            <option value="">Select</option>
+                            <option value="Don Bosco Institute of Technology">Don Bosco Institute of Technology</option>
+                            <option value="St. Johns institute of tech">St. Johns institute of tech</option>
+                            <option value="Father Agnel institute of Tech">Father Agnel institute of Tech</option>
+                        </select>
+                      </div>
+                    </div>
+
+              </div>              
+            </div>
+          </div>
+          <div class="modal-footer">
+              <div class="col-sm-12">
+                  <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+          </div>
+                  </form>
+        </div>
+      </div>
+    </div> 
+
+
+
+            <?php
+
+            if(isset($_POST["email"]))
+            {
+                include 'connection1.php';
+                $email = mysql_real_escape_string($_POST['email']);
+                //$_SESSION["email"] = $email;
+                $password = mysql_real_escape_string($_POST['password']);
+                $sql="SELECT name,role FROM masteruser WHERE email='$email' and password='$password'";
+                $res=mysql_query($sql);
+                while($row = mysql_fetch_array($res))
+                {
+                    $fname=$row['name'];
+                    $role=$row['role']; 
+                }
+                $num=mysql_num_rows($res);
+                if($num==1)
+                {
+                // Login check for students
+                if($role=='Student')
+                {
+                    $data=array($email,$fname,$role);
+                    $_SESSION['user']=$data;
+                    $_SESSION['usertype']=1;
+                    header("location:newindex.php");
+                }
+                // login check for staff members according to different roles
+                else if($role=='Staff')
+                {
+                    $sql1="SELECT * FROM istaff WHERE email='$email'";
+                    $res1=mysql_query($sql1);
+                    while($row1 = mysql_fetch_array($res1))
+                    {
+                        $sname=$row1['staff_name'];
+
+
+                        /*DON'T Change*/
+                        if($row1['is_admin']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Admin");
+                            $_SESSION['admin']=$data;
+                            header("location:adminindex.php");
+                        }
+                        /*else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 1', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }*/
+
+                      
+                        /*else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 2', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }
+                        */
+                       
+                        /*
+                        else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 3', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }*/
+
+                        /*DON'T Change end*/
+
+                        if($row1['is_director']==1 && $row1['is_mentor']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Director");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=5;
+                            header("location:directorindex.php");
+                        } 
+
+                        else if($row1['is_director']==1 && $row1['is_mentor']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Director");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=6;
+                            header("location:directorindex.php");
+                        }
+                        /*
+                        else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 5', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }
+                        */
+                        if($row1['is_principal']==1 && $row1['is_mentor']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Principal");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=7;
+                            header("location:principalindex.php");
+                        }
+
+                        else if($row1['is_principal']==1 && $row1['is_mentor']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Principal");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=8;
+                            header("location:principalindex.php");
+                        }
+                        
+                        /*else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 7', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }*/
+
+                        if($row1['is_hod']==1 && $row1['is_lecturer']==0 && $row1['is_mentor']==0 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=9;
+                            header("location:hodindex.php");
+                        }
+
+                        else if($row1['is_hod']==1 && $row1['is_lecturer']==1 && $row1['is_mentor']==0 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=10;
+                            header("location:hodindex.php");
+                        }
+
+                        else if($row1['is_hod']==1 && $row1['is_lecturer']==1 && $row1['is_mentor']==1 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=11;
+                            header("location:hodindex.php");
+                        }
+
+                        else if($row1['is_hod']==1 && $row1['is_lecturer']==1 && $row1['is_mentor']==0 && $row1['is_create_test']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=12;
+                            header("location:hodindex.php");
+                        }
+                        
+                        else if($row1['is_hod']==1 && $row1['is_lecturer']==1 && $row1['is_mentor']==1 && $row1['is_create_test']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=13;
+                            header("location:hodindex.php");
+                        }
+                        
+                        else if($row1['is_hod']==1 && $row1['is_lecturer']==0 && $row1['is_mentor']==1 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"HOD");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=14;
+                            header("location:hodindex.php");
+                        }
+                        
+
+                        if($row1['is_hod']==0){
+
+                        if($row1['is_lecturer']==1 && $row1['is_mentor']==0 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Lecturer");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=15;
+                            header("location:lecturerindex.php");
+                        }
+                        
+                        else if($row1['is_lecturer']==1 && $row1['is_mentor']==1 && $row1['is_create_test']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Lecturer");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=16;
+                            header("location:lecturerindex.php");
+                        }
+                        
+                        else if($row1['is_lecturer']==1 && $row1['is_mentor']==0 && $row1['is_create_test']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Lecturer");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=17;
+                            header("location:lecturerindex.php");
+                        }
+                        
+                        else if($row1['is_lecturer']==1 && $row1['is_mentor']==1 && $row1['is_create_test']==1 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Lecturer");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=18;
+                            header("location:lecturerindex.php");
+                        }
+                        }
+                        /*
+                        else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 8', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }
+                        */
+                        if($row1['is_mentor']==1 && $row1['is_hod']==0 && $row1['is_lecturer']==0 && $row1['active_yn']==1)
+                        {
+                            $data=array($email,$sname,"Mentor");
+                            $_SESSION['user']=$data;
+                            $_SESSION['usertype']=19;
+                            header("location:mentorindex.php");
+                        }
+                        
+                        else
+                        {
+                        echo "<html><head><script src='js/alertify.min.js'></script>
+                        <link rel='stylesheet' href='css/alertify.core.css' />
+                        <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                        echo "<SCRIPT LANGUAGE='JavaScript'>
+                        alertify.alert('Access Restriction. Inactive user!!Check 9', function (e) {
+                        window.location.href='login.php';
+                        });
+                        </SCRIPT>";
+                        }   
+                    
+                    }
+                }
+                // login check for alumni
+                else if($role=='Alumni')
+                {
+                    $data=array($email,$fname,$role);
+                    $_SESSION['user']=$data;
+                    $_SESSION['usertype']=2;
+                    header("location:index.php");
+                }
+                // login check for recruiter
+                else if($role=='Recruiter')
+                {
+                    $data=array($email,$fname,$role);
+                    $_SESSION['user3']=$data;
+                    $_SESSION['usertype']=3;
+                    header("location:reynold1/recindex.php");
+                }
+                /*else
+                {
+                    $data=array($email,$fname,$role);
+                    $_SESSION['user5']=$data;
+                    header("location:index.php");
+                }*/
+            }
+            else
+            {
+                echo "<html><head><script src='js/alertify.min.js'></script>
+                <link rel='stylesheet' href='css/alertify.core.css' />
+                <link rel='stylesheet' href='css/alertify.default.css' /></head></html>";
+                echo "<SCRIPT LANGUAGE='JavaScript'>
+                alertify.alert('Invalid Credentials. Please try again!!', function (e) {
+                window.location.href='login.php';
+                });
+                </SCRIPT>";
+            }
+
+        }
+        ?>
+<!--  End of Sign up and Log in  -->
+  
+  <br><br><br><br>
+<!--  Footer  -->
+<div style="height:initial;bottom:0px;position:fixed;" class="lineBlack">
+    <div class="container">
+        <div class="row downLine">
+            <div class="col-md-12 text-right">
+            </div>
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2014 Build Your Brand. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right dm">
+               <!-- <ul id="downMenu">
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 1</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 2</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 3</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End of Footer  -->
+</body>
+</html>
+<?php
+ob_flush();
+?>

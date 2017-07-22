@@ -1,0 +1,26 @@
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to tab one */
+
+#tab-one { background: #eee; width:70%; border-style:solid; border-radius:15px;  margin-left:auto; margin-right:auto; padding: 10px;  /*-moz-box-shadow: 0 0 5px #666; */ -webkit-box-shadow: 0 0 5px #666; }
+
+#tab-one .nav { overflow: hidden; margin: 0 0 10px 0; }
+#tab-one .nav li { width: 127px; float: left; margin: 0 10px 0 0; }
+#tab-one .nav li.last { margin-right: 0; }
+#tab-one .nav li a { display: block; padding: 5px; background: #959290; color: white; font-size: 20px; text-align: center; border: 0; border-radius:15px; }
+#tab-one .nav li a:hover { background-color: #111; }
+
+#tab-one ul { list-style: none; }
+#tab-one ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#tab-one ul li a:hover { background: #0099FF; color: white; }
+#tab-one ul li:last-child a { border: none; }
+
+#tab-one ul li.nav-one a.current, #tab-one ul.featured li a:hover { background-color: #0575f4; color: white; }
+#tab-one ul li.nav-two a.current, #tab-one ul.core li a:hover { background-color: #d30000; color: white; }
+#tab-one ul li.nav-three a.current, #tab-one ul.jquerytuts li a:hover { background-color: #8d01b0; color: white; }
+#tab-one ul li.nav-four a.current, #tab-one ul.classics li a:hover { background-color: #FE4902; color: white; }
+
+
+

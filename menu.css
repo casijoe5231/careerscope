@@ -1,0 +1,50 @@
+	.bdy
+	{
+	margin: 0px auto;
+	width:800px;
+	font-family:Calibri;
+	font-size:14px;
+	padding-top:100px;
+	}
+	 
+	ul {
+	font-family:Calibri;
+	font-size:14px;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	}
+	ul li {
+	    display: block;
+	    position: relative;
+	    float: left;
+	}
+	li ul {
+	    display: none;
+	}
+	ul li a {
+	    display: block;
+	    text-decoration: none;
+	    color: #ffffff;
+	    border-top: 1px solid #ffffff;
+	    padding: 5px 15px 5px 15px;
+	    background: #5c5c5c;
+	    margin-left: 1px;
+	    white-space: nowrap;
+	}
+	ul li a:hover {
+	background: #ccc;
+	color:#5c5c5c;
+	}
+	li:hover ul {
+	    display: block;
+	    position: absolute;
+	}
+	li:hover li {
+	    float: none;
+	    font-size: 13px;
+	}
+	li:hover a { background: #5c5c5c; }
+	li:hover li a:hover {
+	    background: #09f;
+	}

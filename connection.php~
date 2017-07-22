@@ -1,0 +1,12 @@
+
+<?php
+    // Connection Settings
+	$hostname="localhost";  // Hostname
+	$username="root";       // Username for Database
+	$password="oracle";           // Database password
+	$dbname="users";        // Database name
+	
+	mysql_connect($hostname,$username,$password);  // Make Connection
+	mysql_select_db($dbname);                      // Select Database
+	
+	?>

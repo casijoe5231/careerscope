@@ -1,0 +1,180 @@
+body
+{
+font-family:Arial, Helvetica, sans-serif;
+}
+html
+{
+ width:100%;
+ height:100%;
+ background: url('../images/bg5.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container
+{
+ width:90%;
+ margin-left:auto;
+ margin-right:auto;
+
+}
+.header
+{
+ /*background: url('../images/pattern2.jpg'); */ 
+ 
+ width:100%;
+ height:12%;
+ background-color:#0099FF;
+background: url(../images/header-shadow.png) center repeat-x;
+background-size: auto 100%;
+
+}
+.header-shadow {
+	background-color: #CCC;
+	
+	width: 100%;
+	background: url(../images/header-shadow.png) center repeat-x;
+	background-size: auto 100%;
+	
+
+}
+.content
+{ min-height:70%;
+height:800px;
+ width:99%;
+ padding-left:1%;
+ background-color:white;
+ margin-top:1%;
+ opacity:0.8;
+
+ padding-bottom:2%;
+}
+
+.footer
+{
+
+ width:100%;
+ height: 7%;
+background-color: #333;
+}
+.footer-link {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: #CCC;
+}
+.title
+{
+ width:auto;
+ height:50px;
+ background-color:#00CCFF;
+ -moz-border-radius: 5px 15px 15px 5px;
+ border-radius: 5px 25px 25px 5px; 
+ box-shadow: 5px 5px 3px #888888;
+ padding-top:1px;
+ padding-right:30px;
+ float:left;
+}
+
+
+/*Clearfix used to solve problem of floating div's in a parent div */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+/* End clearfix */
+
+.register
+{
+-webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+display:block;
+width:40%;
+
+ margin-left:22%; margin-right:auto; padding: 10px;
+}
+
+.register1
+{
+-webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+display:block;
+width:40%;
+
+ font-family: Verdana;
+	font-size: 12px;
+ margin-left:22%; margin-right:auto; padding: 10px;
+}
+
+body {
+ font-family: Arial, Verdana, sans-serif;
+ color: #111111;}
+
+h1{
+ padding: 7px 10px 10px 10px;
+ 
+ }
+ 
+.content
+{
+background-image:url('../images/circle.png');
+background-size:600px 600px;
+
+background-repeat:no-repeat;
+background-position:center;
+}
+
+.common img
+{
+width:150px;
+height:150px;
+margin-left:4%;
+}
+#recruiter
+{
+position:absolute;
+left:29%;
+top:40%;
+}
+#student
+{
+position:absolute;
+left:60%;
+top:40%;
+}
+#tpo
+{
+position:absolute;
+left:32%;
+top:84%;
+}
+#alumni
+{
+position:absolute;
+left:58%;
+top:84%;
+}
+.extra
+{
+width:170px;
+height:170px;
+display:inline-block;
+}

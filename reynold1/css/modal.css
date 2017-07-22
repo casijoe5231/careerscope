@@ -1,0 +1,17 @@
+fieldset
+{
+border-width:1px;
+border-style:solid;
+border-radius:5px;
+border-color: gray;
+
+}
+
+legend
+{
+border-width:1px;
+border-style:solid;
+border-color:#000000;
+text-transform:uppercase;
+background-color:#0066FF;
+}

@@ -1,0 +1,78 @@
+//Testing
+<html>
+<head>
+<style>
+.normal_p{
+color:#000000;
+}
+.error_p{
+color:#F00;
+}
+</style>
+
+</head>
+<body>
+<form action="post_test.php" name="Test_Form" method="POST" onsubmit="JavaScript:return validate_radiobutton_group();">
+<p id='change_info1'>
+Highly Disagree &nbsp;
+<input type='radio' onChange='JavaScript:select_radio_button("change_info1");' name='option1' value='1' id='option1_0' ><label for='option1_0'><span></span>1 </label>
+<input type='radio' onChange='JavaScript:select_radio_button("change_info1");' name='option1' value='2' id='option1_1' ><label for='option1_1'><span></span>2 </label>
+<input type='radio' onChange='JavaScript:select_radio_button("change_info1");' name='option1' value='3' id='option1_2' ><label for='option1_2'><span></span>3 </label>
+<input type='radio' onChange='JavaScript:select_radio_button("change_info1");' name='option1' value='4' id='option1_3' ><label for='option1_3'><span></span>4 </label>
+<input type='radio' onChange='JavaScript:select_radio_button("change_info1");' name='option1' value='5' id='option1_4' ><label for='option1_4'><span></span>5 </label>
+&nbsp; Highly Agree</p>
+
+<br><br>
+<p id='change_info2'>
+Highly Disagree &nbsp;
+<input type='radio' onChange='JavaScript:select_radio_button(change_info2);' name='option1' value='1' id='option2_0' ><label for='option2_0'><span></span>1 </label>
+<input type='radio' onChange='JavaScript:select_radio_button(change_info2);' name='option1' value='2' id='option2_1' ><label for='option2_1'><span></span>2 </label>
+<input type='radio' onChange='JavaScript:select_radio_button(change_info2);' name='option1' value='3' id='option2_2' ><label for='option2_2'><span></span>3 </label>
+<input type='radio' onChange='JavaScript:select_radio_button(change_info2);' name='option1' value='4' id='option2_3' ><label for='option2_3'><span></span>4 </label>
+<input type='radio' onChange='JavaScript:select_radio_button(change_info2);' name='option1' value='5' id='option2_4' ><label for='option2_4'><span></span>5 </label>
+&nbsp; Highly Agree</p>
+
+<input type="submit" value='Submit' style="width: 200px; height: 60px" >
+</form>
+</body>
+<script type="text/JavaScript"> 
+function select_radio_button(group_p)
+{
+document.getElementById(group_p).className='normal_p'; 
+}
+
+function is_selected(rb_group,lbl_info)
+{
+var radio_group =document.getElementsByName(rb_group); 
+ for(var x=0;x<radio_group.length;x++)
+ {
+   if(radio_group[x].checked)
+   {
+    document.getElementById(lbl_info).className='normal_p';
+    return 0; 
+   }
+ }
+document.getElementById(lbl_info).className='error_p';
+return 1;
+}
+
+function validate_radiobutton_group(){
+var error=0;
+
+error+=is_selected("option1","change_info1");
+error+=is_selected("option2","change_info2");
+error+=is_selected("option3","change_info3");
+
+if(error>0){
+alert("It seems you missed something. Unanswered questions are highlightd in red");
+return false; 
+}
+else
+{
+return true; 
+}
+}
+</script>
+</html>
+
+

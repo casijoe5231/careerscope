@@ -1,0 +1,87 @@
+h1 {text-align:center;}
+a {text-decoration:none;}
+p{text-align:center;}
+#page {
+    max-width: 540px;
+    min-width: 520px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;}
+	body {
+ font-family: Arial, Verdana, sans-serif;
+ color: #111111;}
+table {
+ width: 500px;}
+th, td ,h1{
+ padding: 7px 10px 10px 10px;
+ 
+ }
+th {
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ font-size: 20px;
+ border-bottom: 2px solid #111111;
+ border-top: 1px solid #999;
+ text-align: center;}
+tr.even {
+ background-color: #efefef;}
+tr.nh:hover{background-color:#ffffff;}
+ tr:hover {
+ background-color: #c3e6e5;}
+
+ a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+   a:hover, a.on {
+    color: #cc3333;
+    background-color: #ffffff;}
+#rev
+{
+max-width: 540px;
+min-width: 520px;
+text-align:center;
+margin: 10px auto 10px auto;
+padding: 20px;
+border: 4px double #000;
+background-color: #ffffff;
+}
+#news{
+	padding:30px;
+	width:300px;
+	margin:0 auto;
+	float: left;
+}
+
+#news p{color:#fff; padding:10px 0; text-align:center;}
+		.nav{}
+	
+	#wrapper a{color:#e8914c; text-decoration:none; border-bottom:1px dotted #e8914c;}
+		#wrapper a:hover{color:#eab209; border-bottom:1px dotted #eab209;}
+
+
+
+
+
+#content{
+	height:400px;
+	overflow:hidden;
+	margin:0; padding:0;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0, .4);
+}
+
+#content li{
+padding:35px 20px;
+display:block;
+background:#efefef;
+color:#333;
+border-bottom:1px solid #ddd;
+text-align:center;
+font-size:25px;
+font-weight:bold;
+font-family: Helvetica Neue, times, serif;
+}
+	
+   

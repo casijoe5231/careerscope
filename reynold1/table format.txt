@@ -1,0 +1,92 @@
+<tr>
+<td>Company Name:</td>
+    <td>
+     <input type='text' name='cname' size='80'/>
+    </td>
+    </tr>
+	
+    <tr>
+	<td>Company Details:</td>
+    <td>
+    <textarea name='details' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	<tr>
+	<td>Profile Offered:</td>
+    <td>
+    <input type='text' name='profile' size='80' class='animated' />
+    </td>
+    </tr>
+	
+	<tr>
+	<td>Job Title:</td>
+    <td>
+    <textarea name='title' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+    
+	<tr>
+	<td>Skills Required:</td>
+    <td>
+      <textarea name='skills' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+    
+	<tr>
+	<td>Others Skills:</td>
+    <td>
+    <textarea name='other' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	
+	<tr>
+	<td>Package:</td>
+    <td>
+     <textarea name='package' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	<tr>
+	<td>Eligibility:</td>
+    <td>
+      <textarea name='eligibility' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	<tr><td>Recruitment Process :</td>
+    <td>
+    <textarea name='process' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	
+	<tr>
+	<td>Company Website:</td>
+    <td>
+      <textarea name='website' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	
+	
+	<tr>
+	<td>Responsibility scope:</td>
+    <td>
+      <textarea name='scope' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+	
+	<tr>
+	<td>Next Position:</td>
+    <td>
+      <textarea name='nposition' rows='2' cols='60' class='animated'></textarea>
+    </td>
+    </tr>
+	
+    
+    <tr id='submit'>
+      <input type='submit' id='send_message' value='Submit Form'>
+    </tr>

@@ -1,0 +1,9 @@
+	
+	<div id='wrapper'>
+	
+		<h1 class='logo'>Totem Ticker</h1>
+	<?php news();?>
+		<p><a href='#' id='ticker-previous'>Previous</a> / <a href='#' id='ticker-next'>Next</a> / <a id='stop' href='#'>Stop</a> / <a id='start' href='#'>Start</a></p>
+		<p>Roll over the ticker to stop scrolling</p>
+		
+	</div>

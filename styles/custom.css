@@ -1,0 +1,19 @@
+.sidebar-menu{
+	background-color: #DDD;
+	padding: 10px;
+}
+
+.sidebar-menu > .sidebar-menu-options{
+	padding: 10px;
+	border-bottom-width: 2px;
+	border-bottom-color: #999;
+	border-bottom-style: solid;
+	display: block;
+}
+
+.sidebar-menu > .active{
+	background-color: #FFF;
+	margin-left: -10px;
+	margin-right: -10px;
+	border: none;
+}

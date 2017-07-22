@@ -1,0 +1,16 @@
+div.inputnotes div {
+  padding: 3px;
+  padding-left: 4px;
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+div.inputnotes div.note {
+  color: #fff;
+  background: #333;
+}
+
+div.inputnotes div.warning {
+  color: #fff;
+  background: #f03;
+}

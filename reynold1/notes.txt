@@ -1,0 +1,86 @@
+whether to let news feeds point to tpo posts before login on main page?
+put date field  and venue on tpo form for job post,restructure whole tpo form?
+add rich text plugin to form?
+add link's properly. 
+style the document.
+
+
+
+make a basic news feed.
+learn how to use jquery ui modal.
+
+
+
+give company feedback weird shit.
+
+
+!isset($_SESSION['role'])
+
+!isset($_SESSION['myusername'])
+
+
+
+
+<?php $r=array('Select a criteria','cname','aggregate','language','location'); ?>
+<select name='users' onchange=window.location='search.php?q='+this.value>
+<?php
+if(!isset($_GET['q']))
+{
+echo "<option value='$r[0]'>Select a criteria:</option>
+<option value='$r[1]'>Company name</option>
+<option value='$r[2]'>Aggregate</option>
+<option value='$r[3]'>Language</option>
+<option value='$r[4]'>Location</option>";
+}
+else
+{
+while($r)
+{
+if($_GET['q']==$)
+
+}
+}
+
+
+
+else
+{
+echo "<form method='post'>
+<input type='cname' name='cname' value='cname'>Company name.
+<input type='aggregate' name='aggregate' value='aggregate'>Aggregate.
+<input type='language' name='language' value='language'>Language.
+<input type='location' name='location' value='location'>Location.  
+</form>";
+
+}
+
+
+http://stackoverflow.com/questions/12413064/select-and-display-all-fields-from-mysql-table-for-indefinite-amount-of-columns
+
+
+
+
+$a[0]=cname
+a[1]=value
+a[2]=aggregate
+a[3]=range1
+a[4]=range2
+a[5]=language
+a[6]=value
+
+
+$sql="select * from table"
+
+
+
+
+value=0 under process/not accepted yet
+value=1 accepted
+value=2 debarred
+value=3 rejected
+
+
+
+
+
+

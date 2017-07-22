@@ -1,0 +1,273 @@
+body
+{
+font-family:Arial, Helvetica, sans-serif;
+}
+html
+{
+ width:100%;
+ background: url('../images/bg5.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container
+{
+ background:#FFF;
+ width:90%;
+ margin-left:auto;
+ margin-right:auto;
+ height:auto;
+}
+.header
+{
+ /*background: url('../images/pattern2.jpg'); */ 
+ 
+ width:100%;
+ height:12%;
+ background-color:#0099FF;
+background: url(../images/header-shadow.png) center repeat-x;
+background-size: auto 100%;
+
+}
+.header-shadow {
+	background-color: #CCC;
+	
+	width: 100%;
+	background: url(../images/header-shadow.png) center repeat-x;
+	background-size: auto 100%;
+	
+
+}
+.content
+{
+ width:99%;
+ height:700px;
+ padding-left:1%;
+ background-color:white;
+ margin-top:1%;
+ opacity:0.8;
+overflow: auto;
+ padding-bottom:2%;
+}
+
+.content
+{
+ min-height:700px;
+ height:auto !important;
+}
+
+.footer
+{
+
+background-color: #333;
+ 	height: 10%;
+	width: 100%;
+ }
+ .footer-link {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: #CCC;
+}
+ 
+.title
+{
+ width:auto;
+ height:50px;
+ background-color:#00CCFF;
+ -moz-border-radius: 5px 15px 15px 5px;
+ border-radius: 5px 25px 25px 5px; 
+ box-shadow: 5px 5px 3px #888888;
+ padding-top:1px;
+ padding-right:30px;
+ float:left;
+}
+
+
+/*Clearfix used to solve problem of floating div's in a parent div */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+/* End clearfix */
+
+.register
+{
+-webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+display:block;
+width:70%;
+border-style:solid;
+ border-radius:15px;
+ margin-left:25%; margin-right:auto; padding: 10px;
+}
+
+.register1
+{
+-webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+display:block;
+width:70%;
+border-style:solid;
+ border-radius:15px;
+ margin-left:25%; margin-right:auto; padding: 10px;
+}
+#container_internal
+{
+overflow: auto;
+background-color:white;
+margin-left:20px;
+width:89%;
+}
+
+
+
+
+a {text-decoration:none;}
+p{text-align:center;}
+#page {
+    max-width: 540px;
+    min-width: 520px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;}
+
+
+
+
+
+
+ a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+   a:hover, a.on {
+    color: #cc3333;
+    background-color: #ffffff;}
+#rev
+{
+max-width: 540px;
+min-width: 520px;
+text-align:center;
+margin: 10px auto 10px auto;
+padding: 20px;
+border: 4px double #000;
+background-color: #ffffff;
+}
+#news{
+	padding:30px;
+	width:300px;
+	margin:0 auto;
+	float: left;
+}
+
+#news p{color:#fff; padding:10px 0; text-align:center;}
+		.nav{}
+	
+	
+
+
+
+
+
+#content{
+	height:400px;
+	overflow:hidden;
+	margin:0; padding:0;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0, .4);
+}
+
+#content li{
+padding:35px 20px;
+display:block;
+background:#efefef;
+color:#333;
+border-bottom:1px solid #ddd;
+text-align:center;
+font-size:25px;
+font-weight:bold;
+font-family: Helvetica Neue, times, serif;
+}
+
+#submit{ 
+    border:1px solid #09F; background:#09F; padding:5px; color:#FFF;  border-radius:5px; width:auto; height:50px;margin-left:2px;
+	
+}
+
+#menu {
+width: 12em;
+background: #eee;
+float:left;
+}
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#menu a, #menu h2 {
+font: bold 11px/16px arial, helvetica, sans-serif;
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 2px 3px;
+}
+
+#menu h2 {
+color: #fff;
+background: #0066FF;
+text-transform: uppercase;
+}
+
+
+
+#menu a {
+color: #000;
+background: #efefef;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #a00;
+background: #fff;
+}
+
+#menu li {position: relative;}
+
+#menu ul ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+}
+
+div#menu ul ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}

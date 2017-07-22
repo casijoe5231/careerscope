@@ -1,0 +1,15 @@
+<?php
+$stmt="SELECT * FROM mentoractivity";
+$result=mysql_query($stmt);
+while($row=mysql_fetch_array($result ,MYSQL_ASSOC));
+{
+	echo '<tr>
+			<td>'.$row['name'].'</td>
+			<td>'.$row['description'].'</td>
+			<td>'.$row['members'].'</td>
+			<td>'.$row['url_file'].'</td>
+			<td>'.$row['date'].'</td>
+		</tr>';
+}
+ 
+?>

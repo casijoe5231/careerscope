@@ -1,0 +1,206 @@
+<?php
+    session_start();
+    
+	include 'includes/connection1.php';
+    include 'includes/redirect.php';
+		if(isset($_POST["submit"]))
+    userredirect($_SESSION['usertype']);
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+	
+    <title>BYB | Home</title>
+      
+<!--  CSS  -->
+<link rel="stylesheet" type="text/css" href="css/logo.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main
+    stylesheet"charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet'             type='text/css'>
+      
+<!--  JS  -->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js/camera.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script src="js/sorting.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+			jQuery(function(){
+					jQuery('#camera_wrap_1').camera({
+					transPeriod: 500,
+					time: 3000,
+					height: '490px',
+					thumbnails: false,
+					pagination: true,
+					playPause: false,
+					loader: false,
+					navigation: false,
+					hover: false
+				});
+			});
+		</script>
+      
+    </head>
+<body>
+    <!--carousel-->
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+         <!--   <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>-->
+        </ol>
+<!--header-->
+<div class="mast">
+<div class="container">
+        <div class="row">
+            <div class="logo col-md-1">
+                <div>
+                    <a href="#">
+                        <img src="images/byblogo.png" width="90" height="90">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="navmenu" style="text-align: right;">
+                    <ul id="menu">
+                        <li><a href="login.php">Register/Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!--   /Header     -->
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1">
+                </div>    
+                <div class="hero">                    
+                    <hgroup>
+					<div class="inner cover">
+                        <p id="neonglow" style="font-size:78px;">Employ...able</p>
+                    </hgroup>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">        
+                    <hgroup>
+                       <div class="inner cover">
+                        <p id="neonglow" style="font-size:78px;">Employ...able</p>
+                    </hgroup>
+                        
+                      
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">        
+                 <div class="inner cover">
+                        <p id="neonglow" style="font-size:78px;">Employ...able</p>
+                
+                    </hgroup>
+                    <!--button class="btn btn-hero btn-lg" role="button">See all features</button-->
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!--/carousel-->
+    
+<!--Moodal	Window	-->
+<div class="modal hide" id="myModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">x</button>
+        <h3>Login to Build Your Brand</h3>
+    </div>
+    <div class="modal-body">
+        <form method="post" action='' name="login_form">
+            <p>
+                <input type="text" class="span3" name="eid" id="email" placeholder="Email">
+            </p>
+            <p>
+                <input type="password" class="span3" name="passwd" placeholder="Password">
+            </p>
+            <p>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <!--                <a href="#">Forgot Password?</a>-->
+            </p>
+        </form>
+    </div>
+    <div class="modal-footer">
+        New To MyWebsite.com?
+        <a href="#" class="btn btn-primary">Register</a>
+    </div>
+</div>
+<!--    End of Modal    -->
+    
+<!--About BYB-->
+<!--The 3 Test About-->
+<!--  End of Test about  -->
+<!--  Para about BYB  -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 cBusiness">
+            <h3>About Employ...able A Tool imbibe 7 E's of Employability</h3>
+            <h4 style="text-align:justify; text-indent:20px; margin-left:100px; margin-right:100px; font-family: Trebuchet MS, Helvetica, sans-serif;">
+                Employ able is based on the concept of creating,sharing and improving who you are and how you portray it to the external world.your self-brand.
+<h4 style="text-align:justify; text-indent:20px; margin-left:100px; margin-right:100px; font-family: Trebuchet MS, Helvetica, sans-serif;">It marks the journey that encompasses a students life in all dimesnions,be it socially or professionally.</h4>
+<h4 style="text-align:justify; text-indent:20px; margin-left:100px; margin-right:100px; font-family: Trebuchet MS, Helvetica, sans-serif;">Portraying yourself to the external world in a distinctive and innovative way is the prime aim of this portal.
+       This portal intends to  capture all possible elements in a students journey both personally and professionally.</h4>
+<h4 style="text-align:justify; text-indent:20px; margin-left:100px; margin-right:100px; font-family: Trebuchet MS, Helvetica, sans-serif;">This portal showcases the academic,professional and social development that a student undergoes over his/her undergraduate course and seeks to be a one stop shop for recruiters and academics.</h4>
+            </h4>
+            </div>
+    </div>
+</div>
+<!--  /Para about byb  -->
+<!--/About BYB-->
+    
+<!--Sign up and Log in-->
+<!--  End of Sign up and Log in  -->
+    
+<!--  Footer  -->
+<div  class="lineBlack">
+    <div class="container">
+        <div class="row downLine">
+            <div class="col-md-12 text-right">
+            </div>
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2014 Build Your Brand. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right dm">
+               <!-- <ul id="downMenu">
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 1</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 2</a>
+                    </li>
+                    <li><a href="#" target="blank">Link 3</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End of Footer  -->
+</body>

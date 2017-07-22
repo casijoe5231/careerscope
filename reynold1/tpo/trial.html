@@ -1,0 +1,97 @@
+<html>
+<head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="../js/jquery.qtip-1.0.0.min.js"></script>
+<script>
+$.validator.setDefaults({
+	submitHandler: function() { alert("submitted!"); }
+});
+
+$().ready(function() {
+	// validate the comment form when it is submitted
+	$("#commentForm").validate();
+
+	// validate signup form on keyup and submit
+	$("#signupForm").validate({
+		rules: {
+			firstname: "required",
+			lastname: "required",
+			username: {
+				required: true,
+				minlength: 2
+			},
+			password: {
+				required: true,
+				minlength: 5
+			},
+			confirm_password: {
+				required: true,
+				minlength: 5,
+				equalTo: "#password"
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			topic: {
+				required: "#newsletter:checked",
+				minlength: 2
+			},
+			agree: "required"
+		},
+		messages: {
+			firstname: "Please enter your firstname",
+			lastname: "Please enter your lastname",
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 2 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			confirm_password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+			email: "Please enter a valid email address",
+			agree: "Please accept our policy"
+		}
+	});
+</script>
+<script type="text/css">
+#commentForm { width: 500px; }
+#commentForm label { width: 250px; }
+#commentForm label.error, #commentForm input.submit { margin-left: 253px; }
+</script>
+
+</head>
+<body>
+<form class="cmxform" id="commentForm" method="get" action="">
+	<fieldset>
+		<legend>Please provide your name, email address (won't be published) and a comment</legend>
+		<p>
+			<label for="cname">Name (required, at least 2 characters)</label>
+			<input id="cname" name="name" minlength="2" type="text" required />
+		<p>
+			<label for="cemail">E-Mail (required)</label>
+			<input id="cemail" type="email" name="email" required />
+		</p>
+		<p>
+			<label for="curl">URL (optional)</label>
+			<input id="curl" type="url" name="url" />
+		</p>
+		<p>
+			<label for="ccomment">Your comment (required)</label>
+			<textarea id="ccomment" name="comment" required></textarea>
+		</p>
+		<p>
+			<input class="submit" type="submit" value="Submit"/>
+		</p>
+	</fieldset>
+</form>
+</body>
+</html>

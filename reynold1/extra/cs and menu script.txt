@@ -1,0 +1,32 @@
+border:1px solid black; margin-left:20%; margin-right:15%; border-radius:15px; -webkit-box-shadow: 0 0 5px #666;
+background: #eee;
+
+
+
+<div id='menu'>
+<ul>
+  <li><h2>Job Related Functions</h2>
+    <ul>
+      <li><a href='tpo.php'>Post a Job</a></li>
+	  <li><a href='post.php'>Edit a Job POST</a></li>
+    </ul>
+  </li>
+  <li><h2>Available Functions</h2>
+    <ul>
+      <li><a href='dreview.php'>Delete/approve reviews</a></li>
+	  <li><a href='details.php'>View Student Details</a></li>
+	  <li><a href='set.php'>Confirm Students</a></li>
+	  <li><a href='appeared.php'>Set Student Status</a></li>
+	  <li><a href='joboffer.php'>Confirm Student proposals</a></li>
+    </ul>
+  </li>
+  <li><h2>Recruiter Related Functions</h2>
+    <ul>
+      <li><a href='status.php'>View Company Posts</a></li>
+	  <li><a href='verify.php'>Verify Company Details</a></li>
+	  <li><a href='stats.php'>View companies statistics</a></li>
+    </ul>
+  </li>
+  <li><h2><a href='logout.php' style='background-color: #0066FF; border:0px; color: #fff;'>Logout</a></h2></li>
+</ul>
+</div>

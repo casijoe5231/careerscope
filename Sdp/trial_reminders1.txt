@@ -1,0 +1,90 @@
+if($row3[0] == NULL)
+									{
+										$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+										$res4=mysql_query($sql4);
+										echo $row1['title']; 
+									}
+									elseif($row3[4] == 1)
+									{
+										$date = date('Y-m-d', strtotime($row3[5]. ' + 7 days'));
+										$diff=date_diff($row3[5],$time_reminded);
+										$day=$diff->format("%R%a");
+										if($date == $time_reminded)
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										elseif($day > +7)
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										else {}
+									}
+									elseif($row3[4] == 3)
+									{
+										$date = date('Y-m-d', strtotime($row3[5]. ' + 2 days'));
+										if($date == $time_reminded)
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										elseif(($time_reminded - $row3[5]) > '7 days')
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										else {}
+									}
+									elseif($row3[4] == 7)
+									{
+										$date = date('Y-m-d', strtotime($row3[5]. ' + 1 days'));
+										if($date == $time_reminded)
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										elseif(($time_reminded - $row3[5]) > '7 days')
+										{
+											$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('','$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+											$res4=mysql_query($sql4);
+											echo $row1['title']; 
+										}
+										else {}
+									}
+									else
+									{
+										
+									}
+									
+									
+									
+									
+									
+									
+									
+					($row5[3] == 3)and($diff>=2)				
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+$sql3="select * from goal_remind where email='$email' and goal_id='$row1[2]'";
+									$res3=mysql_query($sql3);
+									$row3=mysql_fetch_array($res3);
+									
+										
+									
+									$sql4="insert into goal_remind (remind_id,goal_id,email,title,frequency,time_reminded)values('',$row1[2]','$email','$row1[0]','$row1[5]','$time_reminded')";
+									$res4=mysql_query($sql4);

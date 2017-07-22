@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script src="queries\jquery.js"></script>
+	<script>
+		function on()
+		{
+			try
+			{
+				var user = $("#myform [purpose=user]")[0].value;
+				var pass = $("#myform [purpose=pass]")[0].value;
+				if(user===null || user==="")
+				{
+					alert("Usernama is inconsistent");
+					return false;
+				}
+				if(pass===null || pass==="")
+				{
+					alert("Password is inconsistent");
+					return false;
+				}
+			}
+			catch(e)
+			{
+				alert(e);
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div id="a1">
+		Piyush is s
+	</div>
+	<form  id="myform" action="#" onsubmit="return on()"   method="post">
+		Username : <input type="text"   purpose="user"   /></br>
+		Password : <input type="password" purpose ="pass"  /></br>
+		<input type="Submit" value="Plase Validate" /></br>
+	</form >
+</body>
+</html>
